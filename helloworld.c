@@ -1,13 +1,15 @@
 #include <stdio.h>
 
 int main(){
-    float item1 = 5.75;
-    float item2 = 10.00;
-    char name[] = "Bro";
-    int age = 31;
-    printf("Item1 : $%.2f", item1 );
+    char name [25];
+    int age;
 
-    printf("you are %d years old", age);
+    printf ("whats your name");
+    fgets(name,25,stdin);
+
+    printf("whats you age");
+    scanf("%d",&age);
+    printf("How much year %s old you are %d", name,age);
 
     return 0;
 }
