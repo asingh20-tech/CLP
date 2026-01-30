@@ -3,23 +3,17 @@
 #include <ctype.h>
 
 
+int findMax(int x , int y){
+    return (x<y)? x : y;
+}
+
+
 int main()
 {
-    char unit;
-    float temp;
-
-    printf("\n is the temperature in (F)or (c)?: ");
-    scanf("%c",&unit);
-
-    unit = toupper(unit);
-
-    if(unit == 'c'){
-        printf("the temp is curre");
-
-    }
-    else if(unit == 'f'){
-
-    }
+    //  trenary operator = shortcut to if/else when assigning/returning a value
+    // (condition) ? value if true :value if false
+    printf("%d\n",findMax(3,4));
+    
 
 
     return 0;
