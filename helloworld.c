@@ -14,8 +14,12 @@ int main()
     int z1 = atoi(z);
 
     if (count == 2 && strcmp(x,"col")==0){
-        printf("%d",y1);
+       
         while(1){
+            printf("%d",y1);
+            printf(" , ");
+            if (y1==1)
+                break;
             if (y1%2==0){
                 y1 = y1 /2;
             }
