@@ -12,6 +12,7 @@ int main()
     int count = sscanf(line, "%4s %4s %4s", x, y, z);
     int y1 = atoi(y);
     int z1 = atoi(z);
+    char* endptr;
 
     if (count == 2 && strcmp(x,"col")==0){
        
@@ -27,6 +28,10 @@ int main()
             y1 = (3*y1)+1;
         }
         return 0;  
+    }
+    if (count ==2 && strcmp(x,"d2b")){
+        printf("%ld",strtol(y1,&endptr,2));
+
     }
         
         
