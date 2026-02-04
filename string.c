@@ -1,16 +1,17 @@
 #include <stdio.h>
 #include <strhash.h>
 
+struct person {
+    char name[15];
+    char age;
+};
+
 int main(){
-    char string1[] = "bro";
-    char string2[]= "code";
-
-    strlwr(string1);
-    strupr(string1);
-    strcat(string1,string2);
-    strncat(string1,string2,1);
-    strcpy(string1,string2);
-    strncpy(string1,string2,4);
-    strlen(string1);
-
+    struct person p1;
+    
+    
+    strcpy(p1.name[0] , "aditya" );
+    p1.age = 14;
+    printf("%s", p1.name);
+    
 }

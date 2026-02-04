@@ -29,10 +29,10 @@ int main()
         }
         return 0;  
     }
-    if (count ==2 && strcmp(x,"d2b")){
-        printf("%ld",strtol(y1,&endptr,2));
+    // if (count ==2 && strcmp(x,"d2b")){
+    //     printf("%ld",strtol(y1,&endptr,2));
 
-    }
+    // }
         
         
     
