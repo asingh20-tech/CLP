@@ -2,17 +2,15 @@
 #include <strhash.h>
 #include <string.h>
 
-struct person {
-    char name[15];
-    char age;
-};
+
 
 int main(){
-    struct person p1;
+    int x = 5;
+    int *p = &x;
+    p++;
+
+    printf("%d\n", *p); 
+    printf("%d", x);
     
-    
-    strcpy(p1.name , "aditya" );
-    p1.age = 14;
-    printf("%s", p1.name);
-    return 0 ; 
+    return 0;
 }

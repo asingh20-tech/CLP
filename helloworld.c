@@ -14,6 +14,12 @@ int main()
         int count = sscanf(line, "%4s %4s %4s", x, y, z);
         int y1 = atoi(y);
         int z1 = atoi(z);
+        char **p = line;
+
+        if (count > 3){
+
+
+        }
 
 // ---------------------col and b2d and d2b ------------------------
 
@@ -62,22 +68,19 @@ int main()
         }
 
         if (count ==2 && strcmp(x,"b2d")==0){
-            int decimal ;
-            int i ;
-            int number = atoi (y);
-            while (number >0){
-                decimal = decimal+ pow(2, i);
-            }
-
-        }
-        
-
-     
+            int decimal = 0;
+            int size = strlen(y);
             
-            
+            for (int i =0 ; i < size ; i++){
+                if (y[i]=='1'){
+                    decimal += pow(2, size-1-i);   
+                    continue;          
+                }
+            printf("%d", decimal);
+            printf("\n");
+            continue;
+        } }     
 //  -------------------------------- sum, add .... bye -------------------------
-
-
         if (count == 3)
         {
             if (strcmp(x, "sum") == 0)
