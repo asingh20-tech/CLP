@@ -4,10 +4,17 @@
 #include <ctype.h>
 #include <stdlib.h>
 
+
+void print_error() {
+    printf("[Error] --> Please enter the command correctly!\n");//color add it red 
+} 
+
+
 int main()
 {
     char line[100];
     char x[5], y[5], z[5];
+
   
     while (1){
         fgets(line, sizeof(line), stdin);
