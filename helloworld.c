@@ -49,8 +49,6 @@ int main()
         int count = sscanf(line, "%4s %4s %4s %4s", x, y, z, e);
         int y1 = atoi(y);
         int z1 = atoi(z);
-        
-
 
 // ---------------------col and b2d and d2b ------------------------
 
@@ -163,7 +161,7 @@ int main()
                     print_error();
                 }
                 else{
-                    printf("%.3g \n", (double)a/b);
+                    printf("%.3g ", (double)a/b);
                 }
                 printf("\n");
             }
@@ -175,10 +173,7 @@ int main()
                 break;
                 
             }
-        else {
-    print_error();
-}    
-    }    
+            
+    } return 0; }  
     
-    return 0;
-}
+    
